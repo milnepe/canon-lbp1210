@@ -1,0 +1,14 @@
+[Unit]
+Description=Canon Printer Daemon for CUPS
+After=cups.service
+Requires=cups.service
+
+[Service]
+Type=forking
+ExecStart=/etc/init.d/ccpd start
+ExecStop=/etc/init.d/ccpd stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
