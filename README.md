@@ -263,7 +263,7 @@ On the Debian print server:
 
 ```bash
 /usr/sbin/cupsctl --share-printers --remote-any
-/usr/sbin/lpadmin -h localhost:631/version=1.1 -p LBP1210 -o printer-is-shared=true
+/usr/sbin/lpadmin -h localhost:631 -p LBP1210 -o printer-is-shared=true
 ```
 
 Check:
